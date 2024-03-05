@@ -30,6 +30,7 @@ $concreplus-dark-theme: mat.define-dark-theme((
   )
 ));
 
+// Classe inserida no app-component
 .tema-escuro { 
   @include mat.all-component-colors($concreplus-dark-theme);
 }

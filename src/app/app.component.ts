@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'concreplus';
+
+  isTemaEscuro: boolean = false;
+
+  alternarTema() {
+    if (this.isTemaEscuro) {
+      this.isTemaEscuro = false;
+    } else {
+      this.isTemaEscuro = true;
+    }
+  }
 }

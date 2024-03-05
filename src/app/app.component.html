@@ -1,15 +1,22 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>Concreplus</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
+<div [ngClass]="{'tema-escuro': isTemaEscuro}">
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Concreplus</span>
+    <span class="example-spacer"></span>
+    <button *ngIf="isTemaEscuro" (click)="alternarTema()" mat-icon-button aria-label="Example icon-button with heart icon" 
+    matTooltip="Alterar para tema claro.">
+      <mat-icon>light_mode</mat-icon>
+    </button>
+    <button *ngIf="!isTemaEscuro" (click)="alternarTema()" mat-icon-button aria-label="Example icon-button with heart icon" 
+    matTooltip="Alterar para tema escuro.">
+      <mat-icon>dark_mode</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+</div>
