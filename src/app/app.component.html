@@ -1,9 +1,9 @@
 <div [ngClass]="{'tema-escuro': isTemaEscuro}">
-  <mat-toolbar color="primary">
+  <mat-toolbar color="primary" class="toolbar">
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>Concreplus</span>
+    <img src="../assets/Frame 28.png" width="300" height="85">
     <span class="example-spacer"></span>
     <button *ngIf="isTemaEscuro" (click)="alternarTema()" mat-icon-button aria-label="Example icon-button with heart icon" 
     matTooltip="Alterar para tema claro.">
@@ -13,9 +13,16 @@
     matTooltip="Alterar para tema escuro.">
       <mat-icon>dark_mode</mat-icon>
     </button>
+
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
+      <mat-icon>notifications</mat-icon>
     </button>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+
   </mat-toolbar>
 
   <router-outlet></router-outlet>
