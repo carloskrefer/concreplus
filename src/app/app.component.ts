@@ -10,6 +10,8 @@ export class AppComponent {
 
   isTemaEscuro: boolean = false;
 
+  nomesLinksSidenav: string[] = ["Início", "Registros", "Resultados"];
+
   alternarTema() {
     if (this.isTemaEscuro) {
       this.isTemaEscuro = false;

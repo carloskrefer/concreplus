@@ -30,7 +30,11 @@
   </mat-toolbar>
 
   <mat-sidenav-container class="container-sidenav-e-content">
-    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav mode="side" opened>
+      <mat-nav-list *ngFor="let nomeLink of nomesLinksSidenav">
+        <a mat-list-item href="#" [activated]="false">{{nomeLink}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
     <mat-sidenav-content>
       Main content
       <router-outlet></router-outlet>

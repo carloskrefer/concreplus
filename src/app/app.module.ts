@@ -10,7 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSidenavModule} from '@angular/material/sidenav';
-
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatButtonModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
