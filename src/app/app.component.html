@@ -1,4 +1,4 @@
-<div [ngClass]="{'tema-escuro': isTemaEscuro}">
+<div [ngClass]="{'tema-escuro': isTemaEscuro}" class="container-viewport">
   <mat-toolbar color="primary" class="toolbar">
     <div class="toolbar__secao1">
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -29,5 +29,14 @@
 
   </mat-toolbar>
 
-  <router-outlet></router-outlet>
+  <mat-sidenav-container class="container-sidenav-e-content">
+    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav-content>
+      Main content
+      <router-outlet></router-outlet>
+    
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  
 </div>
