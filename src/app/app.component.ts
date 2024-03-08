@@ -10,6 +10,12 @@ export class AppComponent {
 
   isTemaEscuro: boolean = false;
 
+  itensSidenav: {nomeIcone: string, nomeLink: string}[] = [
+    {nomeIcone: 'home', nomeLink: 'Início'},
+    {nomeIcone: 'note_alt', nomeLink: 'Registros'},
+    {nomeIcone: 'analytics', nomeLink: 'Relatórios'}
+  ];
+
   alternarTema() {
     if (this.isTemaEscuro) {
       this.isTemaEscuro = false;

@@ -31,15 +31,12 @@
 
   <mat-sidenav-container class="container-sidenav-e-content">
     <mat-sidenav mode="side" opened>
-      <mat-nav-list>
+      <mat-nav-list *ngFor="let itemSidenav of itensSidenav">
         <a mat-list-item href="#" [activated]="false">
           <div class="container-link-sidenav">
-            <mat-icon>home</mat-icon>Início
+            <mat-icon color="primary">{{itemSidenav.nomeIcone}}</mat-icon>{{itemSidenav.nomeLink}}
           </div>
         </a>
-      </mat-nav-list>
-      <mat-nav-list>
-        <a mat-list-item href="#" [activated]="false">Registros</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
