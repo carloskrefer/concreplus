@@ -1,7 +1,7 @@
 <div [ngClass]="{'tema-escuro': isTemaEscuro}" class="container-viewport">
   <mat-toolbar color="primary" class="toolbar">
     <div class="toolbar__secao1">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <button (click)="sidenav.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
@@ -30,7 +30,7 @@
   </mat-toolbar>
 
   <mat-sidenav-container class="container-sidenav-e-content">
-    <mat-sidenav mode="side" opened>
+    <mat-sidenav mode="side" opened #sidenav>
       <mat-nav-list *ngFor="let itemSidenav of itensSidenav">
         <a mat-list-item href="#" [activated]="false">
           <div class="container-link-sidenav">
