@@ -13,6 +13,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { PainelPortalAcessoComponent } from './painel-portal-acesso/painel-portal-acesso.component';
+import { Routes, RouterModule } from '@angular/router';
+const rotas: Routes = [
+  { path: '', component: PainelPortalAcessoComponent }
+];
 
 @NgModule({
   declarations: [
@@ -30,6 +34,7 @@ import { PainelPortalAcessoComponent } from './painel-portal-acesso/painel-porta
     MatListModule,
     BrowserAnimationsModule,
     MatCardModule,
+    RouterModule.forRoot(rotas)
   ],
   providers: [],
   bootstrap: [AppComponent]
