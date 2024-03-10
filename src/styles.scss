@@ -18,6 +18,7 @@ $my-typography: mat.define-typography-config();
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
+
 $concreplus-light-theme: mat.define-light-theme((
   color: (
     primary: mat.define-palette(mat.$indigo-palette),
@@ -50,6 +51,11 @@ $concreplus-dark-theme: mat.define-dark-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+$color-config: mat.get-color-config($concreplus-light-theme);
+$primary-color: map-get($color-config, primary);
+$primary-background-color: map-get($primary-color, 600);
 
 app-root {
   display: block;
