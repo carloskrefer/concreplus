@@ -9,6 +9,12 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+$my-typography: mat.define-typography-config();
+// Acho que aqui estou definindo a tipografia geral do site fora dos componentes do material.
+// Assim, <h1> vai ficar com cara de <h1>, além de poder utilizar as classes CSS do Material,
+// como .mat-headline-1, entre outros (listados em https://material.angular.io/guide/typography).
+@include mat.typography-hierarchy($my-typography);
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -17,7 +23,12 @@ $concreplus-light-theme: mat.define-light-theme((
     primary: mat.define-palette(mat.$indigo-palette),
     accent: mat.define-palette(mat.$deep-orange-palette, A200, A100, A400),
     warn: mat.define-palette(mat.$red-palette),
-  )
+  ),
+  // Essa linha vai aplicar a tipografia nos componentes do material. Senão, os componentes do Material
+  // terão fonte com font-weight e font-size estranhos. Sem isso não vai ficar igual os modelos do site do Material.
+  typography: mat.define-typography-config(),
+  // Desnidade controla o espaço em branco entre os componentes. Em telas com muita coisa, usar menos densidade.
+  density: 0
 ));
 
 @include mat.all-component-themes($concreplus-light-theme);
