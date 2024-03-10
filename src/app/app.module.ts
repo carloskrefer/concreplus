@@ -14,6 +14,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { PainelPortalAcessoComponent } from './painel-portal-acesso/painel-portal-acesso.component';
 import { Routes, RouterModule } from '@angular/router';
+import { FooterComponent } from './footer/footer.component';
+
 const rotas: Routes = [
   { path: '', component: PainelPortalAcessoComponent }
 ];
@@ -22,6 +24,7 @@ const rotas: Routes = [
   declarations: [
     AppComponent,
     PainelPortalAcessoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
