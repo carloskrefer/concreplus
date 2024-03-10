@@ -11,9 +11,11 @@ export class AppComponent {
   isTemaEscuro: boolean = false;
 
   itensSidenav: {nomeIcone: string, nomeLink: string}[] = [
-    {nomeIcone: 'home', nomeLink: 'Início'},
-    {nomeIcone: 'note_alt', nomeLink: 'Registros'},
-    {nomeIcone: 'analytics', nomeLink: 'Relatórios'}
+    {nomeIcone: 'home', nomeLink: 'Portal'},
+    {nomeIcone: 'note_alt', nomeLink: 'Registros de concreto'},
+    {nomeIcone: 'analytics', nomeLink: 'Resultados de ensaios'},
+    {nomeIcone: 'analytics', nomeLink: 'Pessoas e empresas'},
+    {nomeIcone: 'analytics', nomeLink: 'Finanças'}
   ];
 
   alternarTema() {
