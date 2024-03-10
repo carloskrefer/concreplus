@@ -26,11 +26,10 @@
         <mat-icon>account_circle</mat-icon>
       </button>
     </div>
-
   </mat-toolbar>
 
   <mat-sidenav-container class="container-sidenav-e-content">
-    <mat-sidenav mode="side" opened #sidenav>
+    <mat-sidenav mode="side" opened #sidenav class="container-sidenav">
       <mat-nav-list *ngFor="let itemSidenav of itensSidenav">
         <a mat-list-item href="#" [activated]="false">
           <div class="container-link-sidenav">
@@ -39,10 +38,8 @@
         </a>
       </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content>
-      Main content
+    <mat-sidenav-content class="container-content">
       <router-outlet></router-outlet>
-    
     </mat-sidenav-content>
   </mat-sidenav-container>
 
