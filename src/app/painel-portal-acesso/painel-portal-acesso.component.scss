@@ -1,0 +1,21 @@
+.card-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.card__header {
+    padding-bottom: 16px;
+}
+
+.card__imagem {
+    width: 300px;
+    height: 200px;
+    // Pra imagem não distorcer ao ficar 300x200
+    object-fit: cover;
+}

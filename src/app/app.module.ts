@@ -11,10 +11,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import { PainelPortalAcessoComponent } from './painel-portal-acesso/painel-portal-acesso.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PainelPortalAcessoComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import {MatListModule} from '@angular/material/list';
     MatTooltipModule,
     MatSidenavModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
