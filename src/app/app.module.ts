@@ -16,10 +16,6 @@ import { PainelPortalAcessoComponent } from './painel-portal-acesso/painel-porta
 import { Routes, RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 
-const rotas: Routes = [
-  { path: '', component: PainelPortalAcessoComponent }
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,8 +32,7 @@ const rotas: Routes = [
     MatSidenavModule,
     MatListModule,
     BrowserAnimationsModule,
-    MatCardModule,
-    RouterModule.forRoot(rotas)
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
