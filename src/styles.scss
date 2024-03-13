@@ -52,11 +52,6 @@ $concreplus-dark-theme: mat.define-dark-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
-$color-config: mat.get-color-config($concreplus-light-theme);
-$primary-color: map-get($color-config, primary);
-$primary-background-color: map-get($primary-color, 600);
-
 app-root {
   display: block;
   height: 100%;

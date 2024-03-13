@@ -1,5 +1,11 @@
 @import '../../styles.scss';
 
-.footer {
-    background-color: $primary-background-color;
+$cor-de-fundo: map-get($concreplus-light-theme, color, primary, 600);
+
+// @if (body.theme-dark) {
+//     $cor-de-fundo: map-get($concreplus-dark-theme, color, primary, 600);
+// }
+
+.tema-escuro app-footer {
+    background-color: $cor-de-fundo;
 }
