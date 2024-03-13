@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "concreplus:build:production"
+              "buildTarget": "concreplus:build:production"
             },
             "development": {
-              "browserTarget": "concreplus:build:development"
+              "buildTarget": "concreplus:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "concreplus:build"
+            "buildTarget": "concreplus:build"
           }
         },
         "test": {
