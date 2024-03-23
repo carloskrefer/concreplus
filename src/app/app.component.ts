@@ -8,7 +8,7 @@ export type AlternadorTema = () => void;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  isTemaEscuro: boolean = false;
+  isTemaEscuro: boolean;
 
   itensSidenav: {nomeIcone: string, nomeLink: string}[] = [
     {nomeIcone: 'home', nomeLink: 'Portal'},
@@ -17,6 +17,10 @@ export class AppComponent {
     {nomeIcone: 'analytics', nomeLink: 'Pessoas e empresas'},
     {nomeIcone: 'analytics', nomeLink: 'Finanças'}
   ];
+
+  constructor() {
+    this.isTemaEscuro = false;
+  }
 
   alternarTema: AlternadorTema = () => {
     if (this.isTemaEscuro) {
