@@ -15,12 +15,14 @@ import {MatCardModule} from '@angular/material/card';
 import { PainelPortalAcessoComponent } from './painel-portal-acesso/painel-portal-acesso.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PainelPortalAcessoComponent,
-    FooterComponent
+    FooterComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

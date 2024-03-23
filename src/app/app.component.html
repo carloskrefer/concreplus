@@ -1,33 +1,5 @@
 <div [ngClass]="{'tema-escuro': isTemaEscuro}" class="container-viewport">
-  <mat-toolbar color="primary" class="toolbar">
-    <div class="toolbar__secao1">
-      <button (click)="sidenav.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </div>
-    <div class="toolbar__secao2">
-      <img src="../assets/Frame 31.png" width="287" height="60">
-    </div>
-    <div class="toolbar__secao3">
-      <button *ngIf="isTemaEscuro" (click)="alternarTema()" mat-icon-button aria-label="Example icon-button with heart icon" 
-      matTooltip="Alterar para tema claro.">
-        <mat-icon>light_mode</mat-icon>
-      </button>
-      <button *ngIf="!isTemaEscuro" (click)="alternarTema()" mat-icon-button aria-label="Example icon-button with heart icon" 
-      matTooltip="Alterar para tema escuro.">
-        <mat-icon>dark_mode</mat-icon>
-      </button>
-
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>notifications</mat-icon>
-      </button>
-
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>account_circle</mat-icon>
-      </button>
-    </div>
-  </mat-toolbar>
-
+  <app-toolbar [alternarTema]="alternarTema" [isTemaEscuro]="isTemaEscuro" [sidenav]="sidenav"></app-toolbar>
   <mat-sidenav-container class="container-sidenav-e-content">
     <mat-sidenav mode="over" #sidenav class="container-sidenav">
       <mat-nav-list *ngFor="let itemSidenav of itensSidenav">

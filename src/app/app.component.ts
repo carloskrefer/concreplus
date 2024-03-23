@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+export type AlternadorTema = () => void;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,11 +18,12 @@ export class AppComponent {
     {nomeIcone: 'analytics', nomeLink: 'Finanças'}
   ];
 
-  alternarTema() {
+  alternarTema: AlternadorTema = () => {
     if (this.isTemaEscuro) {
       this.isTemaEscuro = false;
     } else {
       this.isTemaEscuro = true;
     }
   }
+
 }
