@@ -14,8 +14,8 @@ export class AppComponent {
     {nomeIcone: 'home', nomeLink: 'Portal'},
     {nomeIcone: 'note_alt', nomeLink: 'Registros'},
     {nomeIcone: 'analytics', nomeLink: 'Resultados'},
-    {nomeIcone: 'analytics', nomeLink: 'Pessoas e empr.'},
-    {nomeIcone: 'analytics', nomeLink: 'Finanças'}
+    {nomeIcone: 'diversity_3', nomeLink: 'Pessoas e empr.'},
+    {nomeIcone: 'request_quote', nomeLink: 'Finanças'}
   ];
 
   constructor() {
