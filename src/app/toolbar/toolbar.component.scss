@@ -1,19 +1,10 @@
 .toolbar {
-    height: 90px;
+    height: 80px;
+}
+
+.container_logo {
+    padding-left: 16px;
     display: flex;
-}
-
-.toolbar__secao1, .toolbar__secao3 {
-    width: 20%;
-}
-
-.toolbar__secao2 {
     flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.toolbar__secao3 {
-    display: flex;
-    justify-content: flex-end;
+    
 }
