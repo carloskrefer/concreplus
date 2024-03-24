@@ -1,7 +1,7 @@
 <div [ngClass]="{'tema-escuro': isTemaEscuro}" class="container-viewport">
   <app-toolbar [alternarTema]="alternarTema" [isTemaEscuro]="isTemaEscuro" [sidenav]="sidenav"></app-toolbar>
   <mat-sidenav-container class="container-sidenav-e-content">
-    <mat-sidenav mode="over" #sidenav class="container-sidenav">
+    <mat-sidenav mode="side" opened #sidenav class="container-sidenav">
       <mat-nav-list *ngFor="let itemSidenav of itensSidenav">
         <a mat-list-item href="#" [activated]="false">
           <div class="container-link-sidenav">
