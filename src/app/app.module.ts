@@ -16,13 +16,15 @@ import { PainelPortalAcessoComponent } from './painel-portal-acesso/painel-porta
 import { Routes, RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { PainelLoginComponent } from './painel-login/painel-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PainelPortalAcessoComponent,
     FooterComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    PainelLoginComponent
   ],
   imports: [
     BrowserModule,
