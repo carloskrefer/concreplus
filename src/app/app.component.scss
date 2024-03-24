@@ -9,11 +9,21 @@
 }
 
 .container-sidenav {
-    width: 280px;
+    width: 128px;
 }
 
-.container-link-sidenav {
+
+mat-nav-list.mdc-list {
+    padding: 0px;
+}
+
+.botao_link {
+    height: 72px !important;
+}
+
+.botao_link__container_rotulo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 4px;
 }

@@ -12,9 +12,9 @@ export class AppComponent {
 
   itensSidenav: {nomeIcone: string, nomeLink: string}[] = [
     {nomeIcone: 'home', nomeLink: 'Portal'},
-    {nomeIcone: 'note_alt', nomeLink: 'Registros de concreto'},
-    {nomeIcone: 'analytics', nomeLink: 'Resultados de ensaios'},
-    {nomeIcone: 'analytics', nomeLink: 'Pessoas e empresas'},
+    {nomeIcone: 'note_alt', nomeLink: 'Registros'},
+    {nomeIcone: 'analytics', nomeLink: 'Resultados'},
+    {nomeIcone: 'analytics', nomeLink: 'Pessoas e empr.'},
     {nomeIcone: 'analytics', nomeLink: 'Finanças'}
   ];
 

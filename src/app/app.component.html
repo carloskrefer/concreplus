@@ -2,10 +2,13 @@
   <app-toolbar [alternarTema]="alternarTema" [isTemaEscuro]="isTemaEscuro" [sidenav]="sidenav"></app-toolbar>
   <mat-sidenav-container class="container-sidenav-e-content">
     <mat-sidenav mode="side" opened #sidenav class="container-sidenav">
+      <!-- TODO: Construir minha própria lista de navegação. Pois foi necessário, no CSS, utilizar
+      seletores de classes do material e tag !important, que não é recomendado, para determinar a altura
+      dos botões e para remover o padding entre eles. Obs: documentação do Material foi conferida. -->
       <mat-nav-list *ngFor="let itemSidenav of itensSidenav">
-        <a mat-list-item href="#" [activated]="false">
-          <div class="container-link-sidenav">
-            <mat-icon color="primary">{{itemSidenav.nomeIcone}}</mat-icon>{{itemSidenav.nomeLink}}
+        <a class="botao_link" mat-list-item href="#" [activated]="false">
+          <div class="botao_link__container_rotulo">
+            <mat-icon color="primary">{{itemSidenav.nomeIcone}}</mat-icon><div class="mat-caption botao_link__texto_rotulo">{{itemSidenav.nomeLink}}</div>
           </div>
         </a>
       </mat-nav-list>
