@@ -7,6 +7,14 @@
 .card {
     flex-grow: 1;
     max-width: 300px;
+    filter: grayscale(100%);
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.card:hover {
+    filter: none;
+    transform: translateY(-5px);
 }
 
 .card__header {
