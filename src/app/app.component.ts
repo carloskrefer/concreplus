@@ -9,6 +9,7 @@ export type AlternadorTema = () => void;
 })
 export class AppComponent {
   isTemaEscuro: boolean;
+  isUsuarioLogado: boolean = true;
 
   itensSidenav: {nomeIcone: string, nomeLink: string}[] = [
     {nomeIcone: 'home', nomeLink: 'Portal'},
